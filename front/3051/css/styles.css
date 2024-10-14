@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-section {
+  background-color: #e9eaeb;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-section h3 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-left: 170px;
+}
+
+.contact-section button {
+  background-color: #f05a28;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 260px;
+  font-weight: bold;
+}
+
+.contact-section button:before {
+  content: "✔";
+  color: white;
+  font-size: 16px;
+}
+
+.contact-section button:hover {
+  background-color: #d44d22;
+}
+
+.repair-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.repair-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.repair-section .repair-services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.repair-section .repair-services .service-item {
+  display: flex;
+  align-items: center;
+  width: calc(33.33% - 40px);
+  padding: 10px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.repair-section .repair-services .service-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  filter: invert(48%) sepia(94%) saturate(3189%) hue-rotate(343deg) brightness(98%) contrast(98%);
+}
+
+.repair-section .repair-services .service-item p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.repair-section .repair-services .service-item:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    width: 45%;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+  }
+
+  .contact-section button {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-item {
+    width: 100%;
+  }
+}

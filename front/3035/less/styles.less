@@ -1,0 +1,145 @@
+/* Variables */
+@primary-color: #12b0e8;
+@hover-color: #0e93c4;
+@text-color: #666;
+@heading-color: #333;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    width: 50%;
+}
+
+.product-details h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: @heading-color;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price del {
+    color: #999;
+    margin-right: 10px;
+}
+
+.price span {
+    color: @primary-color;
+    font-weight: bold;
+}
+
+.product-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: @text-color;
+    margin-bottom: 20px;
+}
+
+.quantity-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.quantity-cart input[type="number"] {
+    width: 60px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.quantity-cart button {
+    background-color: @primary-color;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity-cart button:hover {
+    background-color: @hover-color;
+}
+
+/* Tab Section */
+.tab {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: @text-color;
+}
+
+.tab button.active {
+    color: @heading-color;
+    border-bottom: 3px solid @primary-color;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Description and Reviews content */
+h5 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: @heading-color;
+}
+
+.tab-content p {
+    color: @text-color;
+    line-height: 1.6;
+}
